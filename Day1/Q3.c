@@ -4,7 +4,7 @@ int main(){
     long long fact=1;
     printf("enter no.");
     scanf("%d",&n);
-    for(int i=1;i<=n;i++){
+    for(int i=2;i<=n;i++){
         fact*=i;
     }
     printf("factorial=%lld",fact);
