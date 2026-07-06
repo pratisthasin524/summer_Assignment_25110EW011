@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    string str;
+    getline(cin, str);
+
+    string word = "", longest = "";
+
+    for (int i = 0; i <= str.length(); i++) {
+
+        if (i == str.length() || str[i] == ' ') {
+
+            if (word.length() > longest.length())
+                longest = word;
+
+            word = "";
+        }
+        else
+            word += str[i];
+    }
+
+    cout << longest;
+
+    return 0;
+}
